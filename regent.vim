@@ -265,6 +265,7 @@ syn match regentFunc /\<debug\.getuservalue\>/
 syn match regentFunc /\<debug\.setuservalue\>/
 syn match regentFunc /\<debug\.upvalueid\>/
 syn match regentFunc /\<debug\.upvaluejoin\>/
+syn match regentFunc /\<regentlib\.start\>/
 syn match regentFunc /\<regentlib\.assert\>/
 syn match regentFunc /\<regentlib\.list\>/
 
