@@ -108,7 +108,7 @@ syn keyword regentConstant true false
 syn keyword regentStruct struct union fspace
 syn keyword regentVariable var
 syn keyword regentType rawstring niltype double float bool int uint int64 uint64 int32 uint32 int16 uint16 int8 uint8 region ispace partition int1d int2d int3d ptr aliased disjoint equal hdf5 phase_barrier wild
-syn keyword regentFunc __demand __external __forbid __parallel __vectorize __cuda __inline __unroll __trace __spmd
+syn keyword regentFunc __demand __external __forbid __parallel __vectorize __cuda __inline __unroll __trace __spmd __openmp
 
 " Strings
 syn match  regentSpecial contained #\\[\\abfnrtvz'"]\|\\x[[:xdigit:]]\{2}\|\\[[:digit:]]\{,3}#
