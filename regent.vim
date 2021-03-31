@@ -54,6 +54,7 @@ syn keyword regentFunc relaxed
 syn keyword regentFunc arrives
 syn keyword regentFunc awaits
 syn keyword regentFunc no_access_flag
+syn keyword regentFunc remit " quote
 
 " quote
 syn region regentterraQuoteBlock transparent matchgroup=regentterraQuote start="\<quote\>" end="\<end\>" contains=TOP
@@ -297,6 +298,7 @@ if version >= 508 || !exists("did_regent_syntax_inits")
   HiLink regentterraQuote	Function
   HiLink regentRQuote		Function
   HiLink regentRExpr		Function
+  HiLink regentREscape		Function
   HiLink regentComment		Comment
   HiLink regentTodo		Todo
   HiLink regentTable		Structure
