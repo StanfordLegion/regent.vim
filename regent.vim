@@ -64,6 +64,8 @@ syn region regentRQuoteBlock transparent matchgroup=regentRQuote start="\<rquote
 
 syn region regentRExprBlock transparent matchgroup=regentRExpr start="\<rexpr\>" end="\<end\>" contains=TOP
 
+syn region regentREscapeBlock transparent matchgroup=regentREscape start="\<rescape\>" end="\<end\>" contains=TOP
+
 " else
 syn keyword regentCondElse matchgroup=regentCond contained containedin=regentCondEnd else
 
