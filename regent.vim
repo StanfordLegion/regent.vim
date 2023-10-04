@@ -110,7 +110,8 @@ syn keyword regentConstant true false
 " (more) regent keywords
 syn keyword regentStruct struct union fspace
 syn keyword regentVariable var
-syn keyword regentType rawstring niltype double float bool int uint int64 uint64 int32 uint32 int16 uint16 int8 uint8 region ispace partition int1d int2d int3d int4d int5d int6d int7d int8d int9d ptr rect1d rect2d rect3d rect4d rect5d rect6d rect7d rect8d rect9d aliased disjoint complete equal hdf5 phase_barrier wild complex transform restrict
+syn keyword regentType rawstring niltype double float bool int uint int64 uint64 int32 uint32 int16 uint16 int8 uint8 region ispace partition int1d int2d int3d int4d int5d int6d int7d int8d int9d ptr rect1d rect2d rect3d rect4d rect5d rect6d rect7d rect8d rect9d aliased disjoint complete incomplete equal hdf5 phase_barrier wild complex transform restrict
+syn keyword regentType extern rexpr rquote task adjust list_from_element rescape where
 syn keyword regentFunc __demand __external __forbid __allow __index_launch __parallel __vectorize __cuda __inline __unroll __trace __spmd __fence __execution __mapping __block __replicable __openmp __leaf __inner __replicable __idempotent __import_ispace __import_region __import_partition
 
 " Strings
@@ -144,6 +145,7 @@ syn keyword regentFunc _G loadfile rawequal require import
 syn keyword regentFunc load select
 syn keyword regentFunc colors bounds
 syn keyword regentFunc __context __delete __fields __physical __raw __runtime
+syn keyword regentFunc __constant_time_launch __future __import_cross_product __local __line __optimize __parallel_prefix __predicate __task
 syn keyword regentFunc acquire allocate_scratch_fields advance arrive await attach
 syn keyword regentFunc copy cross_product cross_product_array
 syn keyword regentFunc detach dynamic_cast dynamic_collective dynamic_collective_get_result
